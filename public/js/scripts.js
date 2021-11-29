@@ -1,8 +1,9 @@
 const APP_URL = 'http://127.0.0.1:8000/';
 
-$(document).read(function(){
+$(document).change(function() {
     alert('funciona Jquery')
 });
+
 $('#search').autocomplete({
     source: function (request, response){
         $.ajax({

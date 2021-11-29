@@ -8,7 +8,7 @@ use App\Models\Animal;
 class AnimalController extends Controller
 {
     public function index(){
-        $animals = Animals::all();
+        $animals = Animal::all();
         return view('form',compact('animals'));
     }
 }
